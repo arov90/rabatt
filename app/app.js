@@ -54,7 +54,7 @@ app.service('backend', function ($http) {
 app.config(['$routeProvider',
   function ($routeProvider) {
     $routeProvider.when('/', {
-      templateUrl: '/app/components/home/homeView.html',
+      templateUrl: 'app/components/home/homeView.html',
       controller: 'homeController',
     });
   },
