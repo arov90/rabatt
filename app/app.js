@@ -51,14 +51,12 @@ app.service('backend', function ($http) {
   };
 });
 
-app.config(['$routeProvider', '$locationProvider',
-  function ($routeProvider, $locationProvider) {
+app.config(['$routeProvider',
+  function ($routeProvider) {
     $routeProvider.when('/', {
       templateUrl: '/app/components/home/homeView.html',
       controller: 'homeController',
     });
-
-    $locationProvider.html5Mode(true);
   },
 ]);
 
